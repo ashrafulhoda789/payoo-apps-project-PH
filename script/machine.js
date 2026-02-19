@@ -1,3 +1,10 @@
+document.getElementById('logout-btn').addEventListener('click',
+    function(){
+        window.location.assign("index.html");
+    }
+)
+
+
 // machine id -> input value
 function getValueFromInput(id){
     const input = document.getElementById(id);

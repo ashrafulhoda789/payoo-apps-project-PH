@@ -15,7 +15,7 @@ document.getElementById('login-btn').addEventListener('click',
             // 3-1 true:::>> alert > homepage 
             alert("Login Successfull");
             // window.location.replace("/home.html")
-            window.location.assign("home.html")
+            window.location.assign("home.html");
         }else{
             // 3-1 false:::>> alert > return 
             alert("Login Failed \nDemo Pin: 1234");
