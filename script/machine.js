@@ -44,3 +44,17 @@ function showOnly(id){
     selected.classList.remove("hidden");
 
 }
+
+// Time function
+function showTime(){
+    const dateTime = new Date().toLocaleString('en-BD',{
+        weekday: 'short',
+        day: '2-digit',
+        month: 'short',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+
+    return dateTime;
+}
