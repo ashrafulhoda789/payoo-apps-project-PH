@@ -23,6 +23,20 @@ document.getElementById('cashout-btn').addEventListener('click',
             setBalance(newBalance);
             // cashoutAmountInput.value = "";
             // cashoutPinInput.value = "";
+
+            // 1- history container ke show kore asbo
+            const history = document.getElementById('history-container');
+            // 2- new div create korbo
+            const newHistory = document.createElement('div');
+
+            // 3- new div  e innerHTML add korbo
+            newHistory.innerHTML = `
+                <div class="transaction-card p-5 bg-base-100">
+                    Cash Out ${cashoutAmount} Taka Success to ${cashoutNumber}, at ${new Date()}
+                </div>
+            `
+            // 4- history container e new div append korbo
+            history.append(newHistory);
         }
         else{
             // 5-2 false: show and error alert > return

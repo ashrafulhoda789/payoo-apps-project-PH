@@ -51,11 +51,11 @@
         <p class="text-[#080808]/50">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
 
         <div class="buttons grid grid-cols-3 gap-3">
-            <button class="btn flex-col rounded-xl h-full py-4 btn-primary btn-soft">
+            <button onclick="showOnly('add-money')" class="btn flex-col rounded-xl h-full py-4 btn-primary btn-soft">
                 <img src="assets/opt-1.png" alt="">
                 <p>Add Money</p>
             </button>
-            <button class="btn flex-col rounded-xl h-full py-4 btn-primary btn-soft">
+            <button onclick="showOnly('cashout')" class="btn flex-col rounded-xl h-full py-4 btn-primary btn-soft">
                 <img src="assets/opt-2.png" alt="">
                 <p>Cashout</p>
             </button>
@@ -71,14 +71,14 @@
                 <img src="assets/opt-5.png" alt="">
                 <p>Pay Bill</p>
             </button>
-            <button class="btn flex-col rounded-xl h-full py-4 btn-primary btn-soft">
+            <button onclick="showOnly('history')" class="btn flex-col rounded-xl h-full py-4 btn-primary btn-soft">
                 <img src="assets/opt-6.png" alt="">
                 <p>Transactions</p>
             </button>
         </div>
     </section>
 
-    <section id="add-money" class="w-11/12 mx-auto py-5">
+    <section id="add-money" class="w-11/12 mx-auto py-5 hidden">
         <h2 class="text-xl font-bold mb-5">Add Money</h2>
         <div class="card bg-base-100 w-full shadow rounded-2xl">
             <div class="card-body">
@@ -134,6 +134,37 @@
                     <button id="cashout-btn" class="btn btn-primary mt-4">Withdraw Money</button>
                 </fieldset>
             </div>
+        </div>
+    </section>
+
+    <section id="send-money" class="w-11/12 mx-auto py-5 ">
+        <h2 class="text-xl font-bold mb-5">Send Money</h2>
+        <div class="card bg-base-100 w-full shadow rounded-2xl">
+            <div class="card-body">
+                <fieldset class="fieldset">
+                    <label class="label text-neutral font-bold text-[16px]">User Account Number</label>
+                    <input id="send-money-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 w-full" value="01818299406" placeholder="Enter 11 digit number" />
+
+                    <br>
+                    
+                    <label class="label text-neutral font-bold text-[16px]">Amount</label>
+                    <input id="send-money-amount" maxlength="11" minlength="11" type="number" class="input rounded-full bg-base-200 w-full"  placeholder="Enter Amount to transfer" />
+
+                    <br>     
+
+                    <label class="label text-[16px] text-neutral font-bold">Pin Number</label>
+                    <input id="send-money-pin" maxlength="4" type="password" class="input rounded-full bg-base-200 w-full" placeholder="Enter 4 Digit Pin" />
+                    <div></div>
+                    <button id="cashout-btn" class="btn btn-primary mt-4">Send Now</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <section id="history" class="w-11/12 mx-auto py-5 hidden">
+        <h2 class="text-xl font-bold mb-5">Transactions</h2>
+        <div class="space-y-5" id="history-container">
+            
         </div>
     </section>
     
