@@ -26,6 +26,9 @@ document.getElementById('send-money-btn').addEventListener('click',
 
             const time = showTime();
 
+            const noTransac = document.getElementById('no-transaction');
+            noTransac.style.display = 'none';
+
             newHistory.innerHTML = `
                 <div class="flex justify-between items-center bg-white p-5 rounded-2xl shadow-sm">
                     <div class="flex gap-4 items-center">
@@ -47,7 +50,7 @@ document.getElementById('send-money-btn').addEventListener('click',
 
         }
         else{
-            alert("Wrong Pin!");
+            alert("Wrong Pin! \n Demo pin is 1234");
             return;
         }
     }

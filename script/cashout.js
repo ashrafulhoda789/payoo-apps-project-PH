@@ -31,6 +31,8 @@ document.getElementById('cashout-btn').addEventListener('click',
 
             const time = showTime();
 
+            const noTransac = document.getElementById('no-transaction');
+            noTransac.style.display = 'none';
             // 3- new div  e innerHTML add korbo
             newHistory.innerHTML = `
                 <div class="flex justify-between items-center bg-white p-5 rounded-2xl shadow-sm">
@@ -53,7 +55,7 @@ document.getElementById('cashout-btn').addEventListener('click',
         }
         else{
             // 5-2 false: show and error alert > return
-            alert("Invalid Pin");
+            alert("Invalid Pin \n Demo pin is 1234");
             return;
         }
     }
