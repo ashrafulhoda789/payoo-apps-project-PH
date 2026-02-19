@@ -50,7 +50,7 @@ document.getElementById('send-money-btn').addEventListener('click',
 
         }
         else{
-            alert("Wrong Pin! \n Demo pin is 1234");
+            alert("Wrong Pin! \n Demo pin: 1234");
             return;
         }
     }

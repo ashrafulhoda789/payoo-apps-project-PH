@@ -55,7 +55,7 @@ document.getElementById('add-money-btn').addEventListener('click',
             history.append(newHistory);
         }
         else{
-            alert("Invalid Pin \n Demo pin is 1234");
+            alert("Invalid Pin \n Demo pin: 1234");
             return;
         }
 

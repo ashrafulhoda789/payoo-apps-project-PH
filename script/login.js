@@ -18,7 +18,7 @@ document.getElementById('login-btn').addEventListener('click',
             window.location.assign("/home.html")
         }else{
             // 3-1 false:::>> alert > return 
-            alert("Login Failed");
+            alert("Login Failed \nDemo Pin: 1234");
             return;
         }
         

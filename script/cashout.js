@@ -55,7 +55,7 @@ document.getElementById('cashout-btn').addEventListener('click',
         }
         else{
             // 5-2 false: show and error alert > return
-            alert("Invalid Pin \n Demo pin is 1234");
+            alert("Invalid Pin \nDemo pin: 1234");
             return;
         }
     }
