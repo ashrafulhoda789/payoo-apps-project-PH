@@ -27,6 +27,7 @@ function showOnly(id){
     const cashOut = document.getElementById('cashout');
     const sendMoney = document.getElementById('send-money');
     const getBonus = document.getElementById('get-bonus');
+    const payBill = document.getElementById('pay-bill');
     const history = document.getElementById('history');
     // console.log(`Add money- ${addMoney} , cashout- ${cashOut}`);
 
@@ -35,6 +36,7 @@ function showOnly(id){
     cashOut.classList.add("hidden");
     sendMoney.classList.add("hidden");
     getBonus.classList.add("hidden");
+    payBill.classList.add("hidden");
     history.classList.add("hidden");
 
     // Show the element of id's
